@@ -1,0 +1,8 @@
+<div class="form-group">
+    <button class="btn btn-default form-control" id="toggleSort">Toggle Sort Order</button>
+</div>
+<ul class="list-group">
+    <% for (var i=0; i < states.length; i++) { %>
+    <li class="list-group-item"><%=states[i].get('name')%></li>
+    <% }%>
+</ul>
