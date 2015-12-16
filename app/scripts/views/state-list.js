@@ -20,6 +20,11 @@ TypeheadTest.Views = TypeheadTest.Views || {};
             this.render();
         },
 
+        highlightState : function (state) {
+            this.$el.find('li').removeClass('highlighted');
+            this.$el.find('#' + state.get('abbreviation')).addClass('highlighted');
+        },
+
         render: function () {
             var states = this.collection.sortBy('name');
 

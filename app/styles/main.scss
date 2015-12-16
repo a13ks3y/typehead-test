@@ -11,7 +11,7 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstr
 
 /* Space out content a bit */
 body {
-    padding-top: 20px;
+    padding-top: 145px;
     padding-bottom: 20px;
 }
 
@@ -88,4 +88,10 @@ body {
     .jumbotron {
         border-bottom: 0;
     }
+}
+
+
+.highlighted {
+    background-color: $alert-warning-bg;
+    color: $alert-warning-text;
 }
