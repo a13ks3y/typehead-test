@@ -8,7 +8,11 @@ window.TypeheadTest = {
     Routers: {},
     init: function () {
         'use strict';
-        console.log('Hello from Backbone!');
+        this.states = new this.Collections.States();
+        this.states.fetch().done(function (result) {
+            this.searchField = new Backbone.Typeahead(result);
+            this.searchField.setElement('#searchField').render();
+        });
     }
 };
 
