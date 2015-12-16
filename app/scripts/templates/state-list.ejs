@@ -3,6 +3,8 @@
 </div>
 <ul class="list-group">
     <% for (var i=0; i < states.length; i++) { %>
-    <li class="list-group-item"><%=states[i].get('name')%></li>
+    <li class="list-group-item" id="<%=states[i].get('abbreviation')%>">
+        <%=states[i].get('name')%>
+    </li>
     <% }%>
 </ul>
