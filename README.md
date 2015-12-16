@@ -1,2 +1,2 @@
 # typehead-test
-Type head search test assigment
+Type head search test assignment
