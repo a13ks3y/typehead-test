@@ -24,7 +24,7 @@ TypeheadTest.Views = TypeheadTest.Views || {};
             var states = this.collection.sortBy('name');
 
             this.$el.html(this.template({
-                states: !this.isASC ? states : states.reverse()
+                states: this.isASC ? states : states.reverse()
             }));
         }
 
